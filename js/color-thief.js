@@ -400,7 +400,7 @@ var MMCQ = (function() {
             });
         },
         palette: function() {
-            return this.vboxes.map(function(vb) { return vb.color });
+            return this.vboxes.map(function(vb) { return vb.color.concat(vb.vbox._count);});
         },
         size: function() {
             return this.vboxes.size();
